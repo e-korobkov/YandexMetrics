@@ -39,7 +39,7 @@ def connect_db():
     while True:
         try:
             print('Trying to connect to database')
-            pg_hook = PostgresHook(postgres_conn_id="Postgres_metrica_copy1")
+            pg_hook = PostgresHook(postgres_conn_id="Postgres_metrica")
             connection = pg_hook.get_conn()
             cursor = connection.cursor()
         except Exception as err:
